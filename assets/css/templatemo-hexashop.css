@@ -146,24 +146,24 @@ body {
 }
 
 .main-border-button a {
-  font-size: 13px;
-  color: #fffcfc;
-  border: 1px solid #fdfcfc;
-  padding: 12px 25px;
+  font-size: 25px;
+  color: #0a0a0a;
+  border: 1px solid #000000;
+  padding: 5px 50px;
   display: inline-block;
   font-weight: 500;
   transition: all .3s;
 }
 
 .main-border-button a:hover {
-  background-color: #080808;
-  color: #2a2a2a;
+  background-color: #000000;
+  color: #fffdfd;
 }
 
 .main-white-button a {
   font-size: 13px;
-  color: #2a2a2a;
-  background-color: #fff;
+  color: #00000060;
+  background-color: #00000036;
   padding: 12px 25px;
   display: inline-block;
   border-radius: 3px;
@@ -177,7 +177,7 @@ body {
 
 .main-text-button a {
   font-size: 13px;
-  color: #fff;
+  color: #000000;
   font-weight: 600;
   transition: all .3s;
 }
