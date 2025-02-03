@@ -248,6 +248,40 @@ function sendwhatsapp(){
 
        window.open(url, '_blank').focus();
      }
+      // Prevent right click
+document.oncontextmenu = () => {
+    alert("Don't try right click")
+    return false
+}
+
+// Still anyone can inspect elements by F12 key, View page source by Ctrl + U key, Copy by Ctrl + C key, Paste by Ctrl + V key. Let's prevent these */
+
+document.onkeydown = e => {
+    // Prevent F12 key
+    if (e.key == "F12") {
+        alert("Don't try to inspect element")
+        return false
+    }
+
+    // Prevent showing page source by Ctrl + U
+    if (e.ctrlKey && e.key == "U") {
+        alert("Don't try to view page sources")
+        return false
+    }
+
+    // Prevent copying anything from the page
+    if (e.ctrlKey && e.key == "C") {
+        alert("Don't try to copy page element")
+        return false
+    }
+
+    // Prevent paste anything from other sources
+    if (e.ctrlKey && e.key == "V") {
+        alert("Don't try to paste anything to page")
+        return false
+    }
+          }
+      
     </script>
 
   </body>
